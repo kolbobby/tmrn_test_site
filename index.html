@@ -61,17 +61,71 @@
 							<ul class="links">
 								<li><a href="https://www.facebook.com/TMRNWorld/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
 								<li><a href="https://twitter.com/TMRNWorld"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								<li><a href="https://vimeo.com/tmrn"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.youtube.com/TheMusiciansRockNetwork"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
 							</ul>
+
+							<input type="checkbox" id="togglePartners" name="togglePartners" />
+							<label for="togglePartners">
+								<h6>
+									<span class="glow">Partners</span>
+								</h6>
+							</label>
+
+							<section id="partnersContent">
+								<div class="container">
+									<label for="togglePartners">
+										<span></span>
+									</label>
+
+									<div id="partners" class="row">
+										<div class="one-half col">
+											<div class="row">
+												<div class="one-half col">
+													<img src="./src/img/partners/dayna_jade.jpg" />
+												</div>
+												<div class="one-half col">
+													<img src="./src/img/partners/daa.jpg" />
+												</div>
+											</div>
+										</div>
+										<div class="one-half col">
+											<div class="row">
+												<div class="one-half col">
+													<img src="./src/img/partners/pocketful.jpg" />
+												</div>
+												<div class="one-half col">
+													<img src="./src/img/partners/pyramada.png" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
 						</div>
 					</div>
 					<div class="five col">
 						<h1><span>The Musicians Rock Network</span> <small>TMRN</small></h1>
 
-						<h3>Promoting the local music scene since 2006.</h3>
+						<h3>\&#9836;/ Rock Hard	&#38; Keep It ... M<small>e</small>T<small>a</small>L! \&#9836;/</h3>
 					</div>
 				</div>
 			</div>
 		</header>
+
+
+
+
+		<script type="text/javascript">
+			(function() {
+				var togglePartners = document.getElementById('togglePartners'),
+					toggleMobileNavLabel = document.querySelector('label[for="toggleMobileNav"]');
+
+				togglePartners.addEventListener('change', function(e) {
+					toggleMobileNavLabel.classList.toggle('hide');
+				}, false);
+			})();
+		</script>
 
 
 
