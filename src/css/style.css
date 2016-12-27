@@ -507,8 +507,8 @@ h6 { font-size: 2rem; line-height: 1.6; letter-spacing: 0; }
 #partnersContent label[for="togglePartners"] {
 	width: 6rem;
 	height: 6rem;
-	top: calc(50% - 3rem);
-	left: 5rem;
+	top: 1rem;
+	left: 1rem;
 	z-index: 2;
 	position: fixed;
 	cursor: pointer;
@@ -548,7 +548,11 @@ h6 { font-size: 2rem; line-height: 1.6; letter-spacing: 0; }
 	display: block;
 	border: 1px solid #FFF;
 }
-#partners .partner { position: relative; }
+#partners .partner {
+	position: relative;
+	text-align: center;
+	padding-bottom: 1rem;
+}
 #partners .partner a { color: #FFF; }
 #partners .partner input {
 	display: none;
@@ -587,9 +591,9 @@ h6 { font-size: 2rem; line-height: 1.6; letter-spacing: 0; }
 }
 
 @media only screen and (min-width: 64em) {
-	#partnersContent label {
-		top: calc(50% - 3rem);
-		left: 6rem;
+	#partnersContent label[for="togglePartners"] {
+		top: calc(50% - 3rem) !important;
+		left: 5rem !important;
 	}
 
 	#partners { padding: 0; }
